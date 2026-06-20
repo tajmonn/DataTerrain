@@ -2,3 +2,4 @@ streamlit
 streamlit-stl
 pandas
 geopandas
+plotly
