@@ -3,3 +3,7 @@ streamlit-stl
 pandas
 geopandas
 plotly
+trimesh
+mapbox_earcut
+triangle
+manifold3d

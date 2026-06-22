@@ -2,6 +2,7 @@ import geopandas as gpd
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+import streamlit_stl as ststl
 
 # Set up Streamlit page
 st.set_page_config(page_title="Tester", layout="wide")
