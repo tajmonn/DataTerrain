@@ -1,5 +1,6 @@
 import streamlit as st
 import geopandas as gpd
+import plotly.express as px
 
 # -- PAGE CONFIG -------------------------
 st.set_page_config(page_title="Upload and edit the map", layout="wide", page_icon="🗺️")
@@ -142,32 +143,35 @@ with st.container(
                             horizontal_alignment="center",
                             vertical_alignment="center",
                         ):
-                            if st.button("Front", type="secondary"):
-                                if not affix:
-                                    st.error(
-                                        "Type affix before selecting where to add it :)"
-                                    )
-                                else:
-                                    st.session_state.edited_gdf = add_affix(
-                                        data=st.session_state.edited_gdf,
-                                        affix=affix,
-                                        front=True,
-                                    )
-                                    # data_editor already rendered above with old data,
-                                    # so force a rerun to make it reflect the update
-                                    st.rerun()
-                            if st.button("Back", type="secondary"):
-                                if not affix:
-                                    st.error(
-                                        "Type affix before selecting where to add it :)"
-                                    )
-                                else:
-                                    st.session_state.edited_gdf = add_affix(
-                                        data=st.session_state.edited_gdf,
-                                        affix=affix,
-                                        front=False,
-                                    )
-                                    st.rerun()
+                            if st.session_state.change_detected:
+                                st.warning("save changes fist")
+                            else:
+                                if st.button("Front", type="secondary"):
+                                    if not affix:
+                                        st.error(
+                                            "Type affix before selecting where to add it :)"
+                                        )
+                                    else:
+                                        st.session_state.edited_gdf = add_affix(
+                                            data=st.session_state.edited_gdf,
+                                            affix=affix,
+                                            front=True,
+                                        )
+                                        # data_editor already rendered above with old data,
+                                        # so force a rerun to make it reflect the update
+                                        st.rerun()
+                                if st.button("Back", type="secondary"):
+                                    if not affix:
+                                        st.error(
+                                            "Type affix before selecting where to add it :)"
+                                        )
+                                    else:
+                                        st.session_state.edited_gdf = add_affix(
+                                            data=st.session_state.edited_gdf,
+                                            affix=affix,
+                                            front=False,
+                                        )
+                                        st.rerun()
 
                     with st.container(
                         horizontal=False,
@@ -178,17 +182,20 @@ with st.container(
                             label="Remove text from every areaName",
                             placeholder="Remove repeating part from each areaName",
                         )
-                        if st.button("Remove", type="secondary"):
-                            if not remove_part:
-                                st.error(
-                                    "You have to type what you wanna remove before removing it :)"
-                                )
-                            else:
-                                st.session_state.edited_gdf = remove_text(
-                                    data=st.session_state.edited_gdf,
-                                    text_to_remove=remove_part,
-                                )
-                                st.rerun()
+                        if st.session_state.change_detected:
+                            st.warning("save changes fist")
+                        else:
+                            if st.button("Remove", type="secondary"):
+                                if not remove_part:
+                                    st.error(
+                                        "You have to type what you wanna remove before removing it :)"
+                                    )
+                                else:
+                                    st.session_state.edited_gdf = remove_text(
+                                        data=st.session_state.edited_gdf,
+                                        text_to_remove=remove_part,
+                                    )
+                                    st.rerun()
 
         with st.container(
             horizontal=False,
@@ -205,3 +212,26 @@ with st.container(
                 )
             except AttributeError:
                 new_name = None
+
+        with st.container(
+            horizontal=False,
+            horizontal_alignment="center",
+            vertical_alignment="center",
+        ):
+            if st.button("Preview map"):
+                bounds = st.session_state["edited_gdf"].total_bounds
+                lon_center = (bounds[0] + bounds[2]) / 2
+                lat_center = (bounds[1] + bounds[3]) / 2
+                gdf_map = st.session_state["edited_gdf"].to_crs(epsg=4326)
+
+                # st.write(type(gdf_map))
+                fig = px.choropleth_map(
+                    gdf_map,
+                    geojson=gdf_map.__geo_interface__,
+                    locations=gdf_map.index,
+                    center={"lat": lat_center, "lon": lon_center},
+                    opacity=1,
+                )
+
+                fig.update_layout(margin={"r": 0, "t": 0, "l": 0, "b": 0})
+                st.plotly_chart(fig, width="stretch")
