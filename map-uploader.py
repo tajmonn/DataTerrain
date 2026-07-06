@@ -1,6 +1,10 @@
 import streamlit as st
 import geopandas as gpd
+<<<<<<< Updated upstream
 import plotly.express as px
+=======
+from io import BytesIO
+>>>>>>> Stashed changes
 
 # -- PAGE CONFIG -------------------------
 st.set_page_config(page_title="Upload and edit the map", layout="wide", page_icon="🗺️")
@@ -20,6 +24,8 @@ if "last_file_id" not in st.session_state:
     st.session_state.last_file_id = None
 if "change_detected" not in st.session_state:
     st.session_state.change_detected = False
+if "editor_key" not in st.session_state:
+    st.session_state.editor_key = 0
 
 
 # -- DATA LOADING -----------------------
@@ -43,8 +49,12 @@ def gdf_change_button():
     st.session_state.change_detected = True
 
 
-def download_edited_map():
-    pass
+def download_edited_map(geodataframe: gpd.GeoDataFrame):
+    st.write(type(geodataframe))
+    removed_unchecked = geodataframe[geodataframe["include"]].to_json()
+    shp = BytesIO()
+    removed_unchecked.to_file(shp, driver="GeoJSON")
+    return shp
 
 
 # -- MAIN -------------------------------
@@ -109,15 +119,33 @@ with st.container(
                             },
                             column_order=["include", "areaName"],
                             on_change=gdf_change_button,
+                            key=f"data_editor_{st.session_state.editor_key}",
                         )
+
                         if st.session_state.change_detected:
-                            st.warning(
-                                "save changes before using add/delete functions on the left or generating the map"
-                            )
-                            if st.button("save changes"):
-                                st.session_state.edited_gdf = changed_edited_gdf
-                                st.session_state.change_detected = False
-                                st.rerun()
+                            with st.container(
+                                horizontal=True,
+                                horizontal_alignment="center",
+                                vertical_alignment="center",
+                                width="stretch",
+                            ):
+                                st.warning(
+                                    "save changes before using add/delete functions on the left or generating the map"
+                                )
+                            with st.container(
+                                horizontal=True,
+                                horizontal_alignment="center",
+                                vertical_alignment="center",
+                                width="stretch",
+                            ):
+                                if st.button("save changes"):
+                                    st.session_state.edited_gdf = changed_edited_gdf
+                                    st.session_state.change_detected = False
+                                    st.rerun()
+                                elif st.button("cancel"):
+                                    st.session_state.change_detected = False
+                                    st.session_state.editor_key += 1
+                                    st.rerun()
 
                 with st.container(
                     horizontal=False,
@@ -135,7 +163,7 @@ with st.container(
                         )
 
                         affix = st.text_input(
-                            label="Add an affix to all areaNames and press where to add it:",  # TODO add check if was changed the editable data thingy
+                            label="Add an affix to all areaNames and press where to add it:",
                             placeholder="Add something in front or back of every areaName",
                         )
                         with st.container(
@@ -143,6 +171,7 @@ with st.container(
                             horizontal_alignment="center",
                             vertical_alignment="center",
                         ):
+<<<<<<< Updated upstream
                             if st.session_state.change_detected:
                                 st.warning("save changes fist")
                             else:
@@ -172,6 +201,37 @@ with st.container(
                                             front=False,
                                         )
                                         st.rerun()
+=======
+                            if st.button("Front", type="secondary"):
+                                if st.session_state.change_detected:
+                                    st.error("Save or cancel the changes first")
+                                elif not affix:
+                                    st.error(
+                                        "Type affix before selecting where to add it :)"
+                                    )
+                                else:
+                                    st.session_state.edited_gdf = add_affix(
+                                        data=st.session_state.edited_gdf,
+                                        affix=affix,
+                                        front=True,
+                                    )
+                                    st.rerun()
+
+                            if st.button("Back", type="secondary"):
+                                if st.session_state.change_detected:
+                                    st.error("Save or cancel the changes first")
+                                elif not affix:
+                                    st.error(
+                                        "Type affix before selecting where to add it :)"
+                                    )
+                                else:
+                                    st.session_state.edited_gdf = add_affix(
+                                        data=st.session_state.edited_gdf,
+                                        affix=affix,
+                                        front=False,
+                                    )
+                                    st.rerun()
+>>>>>>> Stashed changes
 
                     with st.container(
                         horizontal=False,
@@ -182,11 +242,24 @@ with st.container(
                             label="Remove text from every areaName",
                             placeholder="Remove repeating part from each areaName",
                         )
+<<<<<<< Updated upstream
                         if st.session_state.change_detected:
                             st.warning("save changes fist")
                         else:
                             if st.button("Remove", type="secondary"):
                                 if not remove_part:
+=======
+                        with st.container(
+                            horizontal=True,
+                            horizontal_alignment="center",
+                            vertical_alignment="center",
+                            width="stretch",
+                        ):
+                            if st.button("Remove", type="secondary"):
+                                if st.session_state.change_detected:
+                                    st.error("Save or cancel the changes first")
+                                elif not remove_part:
+>>>>>>> Stashed changes
                                     st.error(
                                         "You have to type what you wanna remove before removing it :)"
                                     )
@@ -197,20 +270,44 @@ with st.container(
                                     )
                                     st.rerun()
 
+        new_name = st.text_input(
+            label="Name for new - edited geojson",
+            value=file.name.split(".")[0] + "_edited",
+        )
+        download_new_geojson = st.download_button(
+            label="Download new GeoJSON",
+            data=download_edited_map(st.session_state.edited_gdf),
+            file_name=new_name + ".geojson",
+            mime="appliation/geo+json",
+        )
+        print("\n\n\n\n")
         with st.container(
             horizontal=False,
             horizontal_alignment="center",
             vertical_alignment="center",
         ):
             try:
+                print("a")
                 new_name = st.text_input(
                     label="Name for new - edited geojson",
                     value=file.name.split(".")[0] + "_edited",
                 )
-                download_edited = st.button(
-                    "Download new geojson", on_click=download_edited_map
-                )
+                print("b")
+                if st.session_state.change_detected:
+                    print("c")
+                    st.warning("Save or cancel the changes to download new file")
+                    print("d")
+                else:
+                    print("f")
+                    download_new_geojson = st.download_button(
+                        label="Download new GeoJSON",
+                        data=st.session_state.edited_gdf.to_json().encode("utf-8"),
+                        file_name=new_name,
+                        mime="appliation/geo+json",
+                    )
+                    print("g")
             except AttributeError:
+                print("h")
                 new_name = None
 
         with st.container(
