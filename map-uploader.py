@@ -46,12 +46,19 @@ def gdf_change_button():
     st.session_state.change_detected = True
 
 
-def download_edited_map(geodataframe: gpd.GeoDataFrame):
-    st.write(type(geodataframe))
-    removed_unchecked = geodataframe[geodataframe["include"]].to_json()
-    shp = BytesIO()
-    removed_unchecked.to_file(shp, driver="GeoJSON")
-    return shp
+def remove_not_included(data: gpd.GeoDataFrame):
+    removed_unchecked = (data[data["include"]]).drop(columns=["include"])
+    return removed_unchecked
+
+
+def download_edited_map(data: gpd.GeoDataFrame):
+    removed_unchecked = remove_not_included(data)
+    removed_unchecked = removed_unchecked.to_json()
+    buffer = BytesIO()
+    buffer.write(removed_unchecked.encode("utf-8"))
+    buffer.seek(0)
+
+    return buffer
 
 
 # -- MAIN -------------------------------
@@ -137,6 +144,11 @@ with st.container(
                             ):
                                 if st.button("save changes"):
                                     st.session_state.edited_gdf = changed_edited_gdf
+                                    st.session_state["edited_gdf"]["geometry"] = (
+                                        gpd.GeoSeries.from_wkt(
+                                            st.session_state["edited_gdf"]["geometry"]
+                                        )
+                                    )
                                     st.session_state.change_detected = False
                                     st.rerun()
                                 elif st.button("cancel"):
@@ -227,16 +239,6 @@ with st.container(
                                     )
                                     st.rerun()
 
-        new_name = st.text_input(
-            label="Name for new - edited geojson",
-            value=file.name.split(".")[0] + "_edited",
-        )
-        download_new_geojson = st.download_button(
-            label="Download new GeoJSON",
-            data=download_edited_map(st.session_state.edited_gdf),
-            file_name=new_name + ".geojson",
-            mime="appliation/geo+json",
-        )
         print("\n\n\n\n")
         with st.container(
             horizontal=False,
@@ -256,10 +258,11 @@ with st.container(
                     print("d")
                 else:
                     print("f")
+                    downloadable_file = download_edited_map(st.session_state.edited_gdf)
                     download_new_geojson = st.download_button(
                         label="Download new GeoJSON",
-                        data=st.session_state.edited_gdf.to_json().encode("utf-8"),
-                        file_name=new_name,
+                        data=downloadable_file,
+                        file_name=new_name + ".geojson",
                         mime="appliation/geo+json",
                     )
                     print("g")
@@ -273,10 +276,12 @@ with st.container(
             vertical_alignment="center",
         ):
             if st.button("Preview map"):
-                bounds = st.session_state["edited_gdf"].total_bounds
+                gdf_map = remove_not_included(st.session_state["edited_gdf"])
+                gdf_map = gpd.GeoDataFrame(gdf_map, geometry="geometry", crs=CRS_MAP)
+
+                bounds = gdf_map.total_bounds
                 lon_center = (bounds[0] + bounds[2]) / 2
                 lat_center = (bounds[1] + bounds[3]) / 2
-                gdf_map = st.session_state["edited_gdf"].to_crs(epsg=4326)
 
                 # st.write(type(gdf_map))
                 fig = px.choropleth_map(
