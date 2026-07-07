@@ -1,10 +1,7 @@
 import streamlit as st
 import geopandas as gpd
-<<<<<<< Updated upstream
 import plotly.express as px
-=======
 from io import BytesIO
->>>>>>> Stashed changes
 
 # -- PAGE CONFIG -------------------------
 st.set_page_config(page_title="Upload and edit the map", layout="wide", page_icon="🗺️")
@@ -171,37 +168,6 @@ with st.container(
                             horizontal_alignment="center",
                             vertical_alignment="center",
                         ):
-<<<<<<< Updated upstream
-                            if st.session_state.change_detected:
-                                st.warning("save changes fist")
-                            else:
-                                if st.button("Front", type="secondary"):
-                                    if not affix:
-                                        st.error(
-                                            "Type affix before selecting where to add it :)"
-                                        )
-                                    else:
-                                        st.session_state.edited_gdf = add_affix(
-                                            data=st.session_state.edited_gdf,
-                                            affix=affix,
-                                            front=True,
-                                        )
-                                        # data_editor already rendered above with old data,
-                                        # so force a rerun to make it reflect the update
-                                        st.rerun()
-                                if st.button("Back", type="secondary"):
-                                    if not affix:
-                                        st.error(
-                                            "Type affix before selecting where to add it :)"
-                                        )
-                                    else:
-                                        st.session_state.edited_gdf = add_affix(
-                                            data=st.session_state.edited_gdf,
-                                            affix=affix,
-                                            front=False,
-                                        )
-                                        st.rerun()
-=======
                             if st.button("Front", type="secondary"):
                                 if st.session_state.change_detected:
                                     st.error("Save or cancel the changes first")
@@ -231,7 +197,6 @@ with st.container(
                                         front=False,
                                     )
                                     st.rerun()
->>>>>>> Stashed changes
 
                     with st.container(
                         horizontal=False,
@@ -242,13 +207,6 @@ with st.container(
                             label="Remove text from every areaName",
                             placeholder="Remove repeating part from each areaName",
                         )
-<<<<<<< Updated upstream
-                        if st.session_state.change_detected:
-                            st.warning("save changes fist")
-                        else:
-                            if st.button("Remove", type="secondary"):
-                                if not remove_part:
-=======
                         with st.container(
                             horizontal=True,
                             horizontal_alignment="center",
@@ -259,7 +217,6 @@ with st.container(
                                 if st.session_state.change_detected:
                                     st.error("Save or cancel the changes first")
                                 elif not remove_part:
->>>>>>> Stashed changes
                                     st.error(
                                         "You have to type what you wanna remove before removing it :)"
                                     )
