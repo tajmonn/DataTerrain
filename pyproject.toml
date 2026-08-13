@@ -10,10 +10,12 @@ dependencies = [
     "mapbox-earcut>=2.0.0",
     "pandas>=3.0.5",
     "plotly>=6.9.0",
+    "rapidfuzz>=3.14.5",
     "streamlit>=1.60.0",
     "streamlit-stl>=0.0.6",
     "triangle>=20250106",
     "trimesh>=4.12.2",
+    "unidecode>=1.4.0",
 ]
 
 [dependency-groups]

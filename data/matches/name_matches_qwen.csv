@@ -1,0 +1,383 @@
+source_name,matched_name,score,method
+bolesławiecki,powiat bolesławiecki,100.0,fuzzy
+dzierżoniowski,powiat dzierżoniowski,100.0,fuzzy
+głogowski,powiat głogowski,100.0,fuzzy
+górowski,powiat górowski,100.0,fuzzy
+jaworski,powiat jaworski,100.0,fuzzy
+kamiennogórski,powiat kamiennogórski,100.0,fuzzy
+kłodzki,powiat kłodzki,100.0,fuzzy
+legnicki,powiat legnicki,100.0,fuzzy
+lubański,powiat lubański,100.0,fuzzy
+lubiński,powiat lubiński,100.0,fuzzy
+lwówecki,powiat lwówecki,100.0,fuzzy
+milicki,powiat milicki,100.0,fuzzy
+oleśnicki,powiat oleśnicki,100.0,fuzzy
+oławski,powiat oławski,100.0,fuzzy
+polkowicki,powiat polkowicki,100.0,fuzzy
+strzeliński,powiat strzeliński,100.0,fuzzy
+średzki,powiat średzki,100.0,fuzzy
+świdnicki,powiat świdnicki,100.0,fuzzy
+trzebnicki,powiat trzebnicki,100.0,fuzzy
+wałbrzyski,powiat wałbrzyski,100.0,fuzzy
+wołowski,powiat wołowski,100.0,fuzzy
+wrocławski,powiat wrocławski,100.0,fuzzy
+ząbkowicki,powiat ząbkowicki,100.0,fuzzy
+zgorzelecki,powiat zgorzelecki,100.0,fuzzy
+złotoryjski,powiat złotoryjski,100.0,fuzzy
+Jelenia Góra,Jelenia Góra,100.0,fuzzy
+Legnica,Legnica,100.0,fuzzy
+Wrocław,Wrocław,100.0,fuzzy
+Wałbrzych,Wałbrzych,100.0,fuzzy
+aleksandrowski,powiat aleksandrowski,100.0,fuzzy
+brodnicki,powiat brodnicki,100.0,fuzzy
+bydgoski,powiat bydgoski,100.0,fuzzy
+chełmiński,powiat chełmiński,100.0,fuzzy
+golubsko-dobrzyński,powiat golubsko-dobrzyński,100.0,fuzzy
+grudziądzki,powiat grudziądzki,100.0,fuzzy
+inowrocławski,powiat inowrocławski,100.0,fuzzy
+mogileński,powiat mogileński,100.0,fuzzy
+nakielski,powiat nakielski,100.0,fuzzy
+radziejowski,powiat radziejowski,100.0,fuzzy
+rypiński,powiat rypiński,100.0,fuzzy
+sępoleński,powiat sępoleński,100.0,fuzzy
+świecki,powiat świecki,100.0,fuzzy
+toruński,powiat toruński,100.0,fuzzy
+tucholski,powiat tucholski,100.0,fuzzy
+wąbrzeski,powiat wąbrzeski,100.0,fuzzy
+włocławski,powiat włocławski,100.0,fuzzy
+żniński,powiat żniński,100.0,fuzzy
+Bydgoszcz,Bydgoszcz,100.0,fuzzy
+Grudziądz,Grudziądz,100.0,fuzzy
+Toruń,Toruń,100.0,fuzzy
+Włocławek,Włocławek,100.0,fuzzy
+bialski,powiat bialski,100.0,fuzzy
+biłgorajski,powiat biłgorajski,100.0,fuzzy
+chełmski,powiat chełmski,100.0,fuzzy
+hrubieszowski,powiat hrubieszowski,100.0,fuzzy
+janowski,powiat janowski,100.0,fuzzy
+krasnostawski,powiat krasnostawski,100.0,fuzzy
+kraśnicki,powiat kraśnicki,100.0,fuzzy
+lubartowski,powiat lubartowski,100.0,fuzzy
+lubelski,powiat lubelski,100.0,fuzzy
+łęczyński,powiat łęczyński,100.0,fuzzy
+łukowski,powiat łukowski,100.0,fuzzy
+opolski,powiat opolski,100.0,fuzzy
+parczewski,powiat parczewski,100.0,fuzzy
+puławski,powiat puławski,100.0,fuzzy
+radzyński,powiat radzyński,100.0,fuzzy
+rycki,powiat rycki,100.0,fuzzy
+świdnicki,powiat świdnicki,100.0,fuzzy
+tomaszowski,powiat tomaszowski,100.0,fuzzy
+włodawski,powiat włodawski,100.0,fuzzy
+zamojski,powiat zamojski,100.0,fuzzy
+Biała Podlaska,Biała Podlaska,100.0,fuzzy
+Chełm,Chełm,100.0,fuzzy
+Lublin,Lublin,100.0,fuzzy
+Zamość,Zamość,100.0,fuzzy
+gorzowski,powiat gorzowski,100.0,fuzzy
+krośnieński,powiat krośnieński,100.0,fuzzy
+międzyrzecki,powiat międzyrzecki,100.0,fuzzy
+nowosolski,powiat nowosolski,100.0,fuzzy
+słubicki,powiat słubicki,100.0,fuzzy
+strzelecko-drezdenecki,powiat strzelecko-drezdenecki,100.0,fuzzy
+sulęciński,powiat sulęciński,100.0,fuzzy
+świebodziński,powiat świebodziński,100.0,fuzzy
+zielonogórski,powiat zielonogórski,100.0,fuzzy
+żagański,powiat żagański,100.0,fuzzy
+żarski,powiat żarski,100.0,fuzzy
+wschowski,powiat wschowski,100.0,fuzzy
+Gorzów Wielkopolski,Gorzów Wielkopolski,100.0,fuzzy
+Zielona Góra,Zielona Góra,100.0,fuzzy
+bełchatowski,powiat bełchatowski,100.0,fuzzy
+łaski,powiat łaski,100.0,fuzzy
+łęczycki,powiat łęczycki,100.0,fuzzy
+łowicki,powiat łowicki,100.0,fuzzy
+łódzki wschodni,powiat łódzki wschodni,100.0,fuzzy
+opoczyński,powiat opoczyński,100.0,fuzzy
+pabianicki,powiat pabianicki,100.0,fuzzy
+pajęczański,powiat pajęczański,100.0,fuzzy
+piotrkowski,powiat piotrkowski,100.0,fuzzy
+poddębicki,powiat poddębicki,100.0,fuzzy
+radomszczański,powiat radomszczański,100.0,fuzzy
+rawski,powiat rawski,100.0,fuzzy
+sieradzki,powiat sieradzki,100.0,fuzzy
+skierniewicki,powiat skierniewicki,100.0,fuzzy
+tomaszowski,powiat tomaszowski,100.0,fuzzy
+wieluński,powiat wieluński,100.0,fuzzy
+wieruszowski,powiat wieruszowski,100.0,fuzzy
+zduńskowolski,powiat zduńskowolski,100.0,fuzzy
+zgierski,powiat zgierski,100.0,fuzzy
+brzeziński,powiat brzeziński,100.0,fuzzy
+Łódź,Łódź,100.0,fuzzy
+Piotrków Trybunalski,Piotrków Trybunalski,100.0,fuzzy
+Skierniewice,Skierniewice,100.0,fuzzy
+bocheński,powiat bocheński,100.0,fuzzy
+brzeski,powiat brzeski,100.0,fuzzy
+chrzanowski,powiat chrzanowski,100.0,fuzzy
+dąbrowski,powiat dąbrowski,100.0,fuzzy
+gorlicki,powiat gorlicki,100.0,fuzzy
+krakowski,powiat krakowski,100.0,fuzzy
+limanowski,powiat limanowski,100.0,fuzzy
+miechowski,powiat miechowski,100.0,fuzzy
+myślenicki,powiat myślenicki,100.0,fuzzy
+nowosądecki,powiat nowosądecki,100.0,fuzzy
+nowotarski,powiat nowotarski,100.0,fuzzy
+olkuski,powiat olkuski,100.0,fuzzy
+oświęcimski,powiat oświęcimski,100.0,fuzzy
+proszowicki,powiat proszowicki,100.0,fuzzy
+suski,powiat suski,100.0,fuzzy
+tarnowski,powiat tarnowski,100.0,fuzzy
+tatrzański,powiat tatrzański,100.0,fuzzy
+wadowicki,powiat wadowicki,100.0,fuzzy
+wielicki,powiat wielicki,100.0,fuzzy
+Kraków,Krakow,100.0,fuzzy
+Nowy Sącz,Nowy Sącz,100.0,fuzzy
+Tarnów,Tarnów,100.0,fuzzy
+białobrzeski,powiat białobrzeski,100.0,fuzzy
+ciechanowski,powiat ciechanowski,100.0,fuzzy
+garwoliński,powiat garwoliński,100.0,fuzzy
+gostyniński,powiat gostyniński,100.0,fuzzy
+grodziski,powiat grodziski,100.0,fuzzy
+grójecki,powiat grójecki,100.0,fuzzy
+kozienicki,powiat kozienicki,100.0,fuzzy
+legionowski,powiat legionowski,100.0,fuzzy
+lipski,powiat lipski,100.0,fuzzy
+łosicki,powiat łosicki,100.0,fuzzy
+makowski,powiat makowski,100.0,fuzzy
+miński,powiat miński,100.0,fuzzy
+mławski,powiat mławski,100.0,fuzzy
+nowodworski,powiat nowodworski,100.0,fuzzy
+ostrołęcki,powiat ostrołęcki,100.0,fuzzy
+ostrowski,powiat ostrowski,100.0,fuzzy
+otwocki,powiat otwocki,100.0,fuzzy
+piaseczyński,powiat piaseczyński,100.0,fuzzy
+płocki,powiat płocki,100.0,fuzzy
+płoński,powiat płoński,100.0,fuzzy
+pruszkowski,powiat pruszkowski,100.0,fuzzy
+przasnyski,powiat przasnyski,100.0,fuzzy
+przysuski,powiat przysuski,100.0,fuzzy
+pułtuski,powiat pułtuski,100.0,fuzzy
+radomski,powiat radomski,100.0,fuzzy
+sierpecki,powiat sierpecki,100.0,fuzzy
+sochaczewski,powiat sochaczewski,100.0,fuzzy
+sokołowski,powiat sokołowski,100.0,fuzzy
+szydłowiecki,powiat szydłowiecki,100.0,fuzzy
+warszawski zachodni,powiat warszawski zachodni,100.0,fuzzy
+węgrowski,powiat węgrowski,100.0,fuzzy
+wołomiński,powiat wołomiński,100.0,fuzzy
+wyszkowski,powiat wyszkowski,100.0,fuzzy
+zwoleński,powiat zwoleński,100.0,fuzzy
+żuromiński,powiat żuromiński,100.0,fuzzy
+Ostrołęka,Ostrołęka,100.0,fuzzy
+Płock,Płock,100.0,fuzzy
+Radom,Radom,100.0,fuzzy
+Siedlce,Siedlce,100.0,fuzzy
+Warszawa,Warszawa,100.0,fuzzy
+brzeski,powiat brzeski,100.0,fuzzy
+głubczycki,powiat głubczycki,100.0,fuzzy
+kędzierzyńsko-kozielski,powiat kędzierzyńsko-kozielski,100.0,fuzzy
+kluczborski,powiat kluczborski,100.0,fuzzy
+krapkowicki,powiat krapkowicki,100.0,fuzzy
+namysłowski,powiat namysłowski,100.0,fuzzy
+nyski,powiat nyski,100.0,fuzzy
+oleski,powiat oleski,100.0,fuzzy
+opolski,powiat opolski,100.0,fuzzy
+prudnicki,powiat prudnicki,100.0,fuzzy
+strzelecki,powiat strzelecki,100.0,fuzzy
+Opole,Opole,100.0,fuzzy
+bieszczadzki,powiat bieszczadzki,100.0,fuzzy
+brzozowski,powiat brzozowski,100.0,fuzzy
+dębicki,powiat dębicki,100.0,fuzzy
+jarosławski,powiat jarosławski,100.0,fuzzy
+jasielski,powiat jasielski,100.0,fuzzy
+kolbuszowski,powiat kolbuszowski,100.0,fuzzy
+krośnieński,powiat krośnieński,100.0,fuzzy
+leżajski,powiat leżajski,100.0,fuzzy
+lubaczowski,powiat lubaczowski,100.0,fuzzy
+łańcucki,powiat łańcucki,100.0,fuzzy
+mielecki,powiat mielecki,100.0,fuzzy
+niżański,powiat niżański,100.0,fuzzy
+przemyski,powiat przemyski,100.0,fuzzy
+przeworski,powiat przeworski,100.0,fuzzy
+ropczycko-sędziszowski,powiat ropczycko-sędziszowski,100.0,fuzzy
+rzeszowski,powiat rzeszowski,100.0,fuzzy
+sanocki,powiat sanocki,100.0,fuzzy
+stalowowolski,powiat stalowowolski,100.0,fuzzy
+strzyżowski,powiat strzyżowski,100.0,fuzzy
+tarnobrzeski,powiat tarnobrzeski,100.0,fuzzy
+leski,powiat leski,100.0,fuzzy
+Krosno,Krosno,100.0,fuzzy
+Przemyśl,Przemyśl,100.0,fuzzy
+Rzeszów,Rzeszów,100.0,fuzzy
+Tarnobrzeg,Tarnobrzeg,100.0,fuzzy
+augustowski,powiat augustowski,100.0,fuzzy
+białostocki,powiat białostocki,100.0,fuzzy
+bielski,powiat bielski,100.0,fuzzy
+grajewski,powiat grajewski,100.0,fuzzy
+hajnowski,powiat hajnowski,100.0,fuzzy
+kolneński,powiat kolneński,100.0,fuzzy
+łomżyński,powiat łomżyński,100.0,fuzzy
+moniecki,powiat moniecki,100.0,fuzzy
+sejneński,powiat sejneński,100.0,fuzzy
+siemiatycki,powiat siemiatycki,100.0,fuzzy
+sokólski,powiat sokólski,100.0,fuzzy
+suwalski,powiat suwalski,100.0,fuzzy
+wysokomazowiecki,powiat wysokomazowiecki,100.0,fuzzy
+zambrowski,powiat zambrowski,100.0,fuzzy
+Białystok,Białystok,100.0,fuzzy
+Łomża,Łomża,100.0,fuzzy
+Suwałki,Suwałki,100.0,fuzzy
+bytowski,powiat bytowski,100.0,fuzzy
+chojnicki,powiat chojnicki,100.0,fuzzy
+człuchowski,powiat człuchowski,100.0,fuzzy
+gdański,powiat gdański,100.0,fuzzy
+kartuski,powiat kartuski,100.0,fuzzy
+kościerski,powiat kościerski,100.0,fuzzy
+kwidzyński,powiat kwidzyński,100.0,fuzzy
+lęborski,powiat lęborski,100.0,fuzzy
+malborski,powiat malborski,100.0,fuzzy
+nowodworski,powiat nowodworski,100.0,fuzzy
+pucki,powiat pucki,100.0,fuzzy
+słupski,powiat słupski,100.0,fuzzy
+starogardzki,powiat starogardzki,100.0,fuzzy
+tczewski,powiat tczewski,100.0,fuzzy
+wejherowski,powiat wejherowski,100.0,fuzzy
+sztumski,powiat sztumski,100.0,fuzzy
+Gdańsk,Gdańsk,100.0,fuzzy
+Gdynia,Gdynia,100.0,fuzzy
+Słupsk,Słupsk,100.0,fuzzy
+Sopot,Sopot,100.0,fuzzy
+będziński,powiat będziński,100.0,fuzzy
+bielski,powiat bielski,100.0,fuzzy
+cieszyński,powiat cieszyński,100.0,fuzzy
+częstochowski,powiat częstochowski,100.0,fuzzy
+kłobucki,powiat kłobucki,100.0,fuzzy
+lubliniecki,powiat lubliniecki,100.0,fuzzy
+mikołowski,powiat mikołowski,100.0,fuzzy
+myszkowski,powiat myszkowski,100.0,fuzzy
+pszczyński,powiat pszczyński,100.0,fuzzy
+rybnicki,powiat rybnicki,100.0,fuzzy
+bieruńsko-lędziński,powiat bieruńsko-lędziński,100.0,fuzzy
+zawierciański,powiat zawierciański,100.0,fuzzy
+żywiecki,powiat żywiecki,100.0,fuzzy
+Bielsko-Biała,Bielsko-Biała,100.0,fuzzy
+Bytom,Bytom,100.0,fuzzy
+Chorzów,Chorzów,100.0,fuzzy
+Częstochowa,Częstochowa,100.0,fuzzy
+Dąbrowa Górnicza,Dąbrowa Górnicza,100.0,fuzzy
+Gliwice,Gliwice,100.0,fuzzy
+Jastrzębie-Zdrój,Jastrzębie-Zdrój,100.0,fuzzy
+Jaworzno,Jaworzno,100.0,fuzzy
+Katowice,Katowice,100.0,fuzzy
+Mysłowice,Mysłowice,100.0,fuzzy
+Piekary Śląskie,Piekary Śląskie,100.0,fuzzy
+Ruda Śląska,Ruda Śląska,100.0,fuzzy
+Rybnik,Rybnik,100.0,fuzzy
+Siemianowice Śląskie,Siemianowice Śląskie,100.0,fuzzy
+Sosnowiec,Sosnowiec,100.0,fuzzy
+Świętochłowice,Świętochłowice,100.0,fuzzy
+Tychy,Tychy,100.0,fuzzy
+Zabrze,Zabrze,100.0,fuzzy
+Żory,Żory,100.0,fuzzy
+buski,powiat buski,100.0,fuzzy
+jędrzejowski,powiat jędrzejowski,100.0,fuzzy
+kazimierski,powiat kazimierski,100.0,fuzzy
+kielecki,powiat kielecki,100.0,fuzzy
+konecki,powiat konecki,100.0,fuzzy
+opatowski,powiat opatowski,100.0,fuzzy
+ostrowiecki,powiat ostrowiecki,100.0,fuzzy
+pińczowski,powiat pińczowski,100.0,fuzzy
+sandomierski,powiat sandomierski,100.0,fuzzy
+skarżyski,powiat skarżyski,100.0,fuzzy
+starachowicki,powiat starachowicki,100.0,fuzzy
+staszowski,powiat staszowski,100.0,fuzzy
+włoszczowski,powiat włoszczowski,100.0,fuzzy
+Kielce,Kielce,100.0,fuzzy
+bartoszycki,powiat bartoszycki,100.0,fuzzy
+braniewski,powiat braniewski,100.0,fuzzy
+działdowski,powiat działdowski,100.0,fuzzy
+elbląski,powiat elbląski,100.0,fuzzy
+ełcki,powiat ełcki,100.0,fuzzy
+giżycki,powiat giżycki,100.0,fuzzy
+iławski,powiat iławski,100.0,fuzzy
+kętrzyński,powiat kętrzyński,100.0,fuzzy
+lidzbarski,powiat lidzbarski,100.0,fuzzy
+mrągowski,powiat mrągowski,100.0,fuzzy
+nidzicki,powiat nidzicki,100.0,fuzzy
+nowomiejski,powiat nowomiejski,100.0,fuzzy
+olecki,powiat olecki,100.0,fuzzy
+olsztyński,powiat olsztyński,100.0,fuzzy
+ostródzki,powiat ostródzki,100.0,fuzzy
+piski,powiat piski,100.0,fuzzy
+szczycieński,powiat szczycieński,100.0,fuzzy
+gołdapski,powiat gołdapski,100.0,fuzzy
+węgorzewski,powiat węgorzewski,100.0,fuzzy
+Elbląg,Elbląg,100.0,fuzzy
+Olsztyn,Olsztyn,100.0,fuzzy
+chodzieski,powiat chodzieski,100.0,fuzzy
+czarnkowsko-trzcianecki,powiat czarnkowsko-trzcianecki,100.0,fuzzy
+gnieźnieński,powiat gnieźnieński,100.0,fuzzy
+gostyński,powiat gostyński,100.0,fuzzy
+grodziski,powiat grodziski,100.0,fuzzy
+jarociński,powiat jarociński,100.0,fuzzy
+kaliski,powiat kaliski,100.0,fuzzy
+kępiński,powiat kępiński,100.0,fuzzy
+kolski,powiat kolski,100.0,fuzzy
+koniński,powiat koniński,100.0,fuzzy
+kościański,powiat kościański,100.0,fuzzy
+krotoszyński,powiat krotoszyński,100.0,fuzzy
+leszczyński,powiat leszczyński,100.0,fuzzy
+międzychodzki,powiat międzychodzki,100.0,fuzzy
+nowotomyski,powiat nowotomyski,100.0,fuzzy
+obornicki,powiat obornicki,100.0,fuzzy
+ostrowski,powiat ostrowski,100.0,fuzzy
+ostrzeszowski,powiat ostrzeszowski,100.0,fuzzy
+pilski,powiat pilski,100.0,fuzzy
+pleszewski,powiat pleszewski,100.0,fuzzy
+poznański,powiat poznański,100.0,fuzzy
+rawicki,powiat rawicki,100.0,fuzzy
+słupecki,powiat słupecki,100.0,fuzzy
+szamotulski,powiat szamotulski,100.0,fuzzy
+średzki,powiat średzki,100.0,fuzzy
+śremski,powiat śremski,100.0,fuzzy
+turecki,powiat turecki,100.0,fuzzy
+wągrowiecki,powiat wągrowiecki,100.0,fuzzy
+wolsztyński,powiat wolsztyński,100.0,fuzzy
+wrzesiński,powiat wrzesiński,100.0,fuzzy
+złotowski,powiat złotowski,100.0,fuzzy
+Kalisz,Kalisz,100.0,fuzzy
+Konin,Konin,100.0,fuzzy
+Leszno,Leszno,100.0,fuzzy
+Poznań,Poznań,100.0,fuzzy
+białogardzki,powiat białogardzki,100.0,fuzzy
+choszczeński,powiat choszczeński,100.0,fuzzy
+drawski,powiat drawski,100.0,fuzzy
+goleniowski,powiat goleniowski,100.0,fuzzy
+gryficki,powiat gryficki,100.0,fuzzy
+gryfiński,powiat gryfiński,100.0,fuzzy
+kamieński,powiat kamieński,100.0,fuzzy
+kołobrzeski,powiat brzeski,90.0,fuzzy
+koszaliński,powiat koszaliński,100.0,fuzzy
+myśliborski,powiat myśliborski,100.0,fuzzy
+policki,powiat policki,100.0,fuzzy
+pyrzycki,powiat pyrzycki,100.0,fuzzy
+sławieński,powiat sławieński,100.0,fuzzy
+stargardzki,powiat stargardzki,100.0,fuzzy
+szczecinecki,powiat szczecinecki,100.0,fuzzy
+świdwiński,powiat świdwiński,100.0,fuzzy
+wałecki,powiat wałecki,100.0,fuzzy
+łobeski,powiat łobeski,100.0,fuzzy
+Koszalin,Koszalin,100.0,fuzzy
+Szczecin,Szczecin,100.0,fuzzy
+Świnoujście,Świnoujście,100.0,fuzzy
+karkonoski,,-1.0,none
+lipnowski,,-1.0,none
+kutnowski,Kutno County,-1.0,llm
+siedlecki,Siedlce,-1.0,llm
+żyrardowski,Żyrardów County,-1.0,llm
+statki,,-1.0,none
+zagranica,,-1.0,none
+gliwicki,powiat gnieźnieński,-1.0,llm
+raciborski,,-1.0,none
+tarnogórski,,-1.0,none
+wodzisławski,Wodzisław County,-1.0,llm
